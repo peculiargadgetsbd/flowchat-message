@@ -1,0 +1,99 @@
+.flowchat-buttons-container {
+    position: fixed;
+    bottom: 80px; /* Increased from 30px */
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 999999;
+    transform: translateZ(0);
+}
+
+.flowchat-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all 0.3s ease;
+}
+
+.flowchat-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform: translateY(0);
+    position: relative;
+}
+
+.flowchat-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.flowchat-btn i {
+    font-size: 20px;
+}
+
+.flowchat-btn-label {
+    background: rgba(0,0,0,0.85);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-right: 10px;
+    opacity: 0;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.flowchat-btn-wrapper:hover .flowchat-btn-label {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.call-btn { background: linear-gradient(135deg, #25D366, #128C7E); }
+.messenger-btn { background: linear-gradient(135deg, #006AFF, #0084FF); }
+.whatsapp-btn { background: linear-gradient(135deg, #25D366, #128C7E); }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .flowchat-buttons-container {
+        bottom: 100px !important; /* Increased from 20px */
+        right: 10px !important;
+    }
+    
+    .flowchat-btn {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .flowchat-btn-label {
+        font-size: 13px;
+        padding: 4px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .flowchat-buttons-container {
+        bottom: 100px !important; /* Increased from 15px */
+        right: 10px !important;
+        gap: 5px;
+    }
+    
+    .flowchat-btn {
+        width: 42px;
+        height: 42px;
+    }
+    
+    .flowchat-btn i {
+        font-size: 18px;
+    }
+}
