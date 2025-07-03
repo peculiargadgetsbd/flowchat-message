@@ -27,17 +27,6 @@ FlowChat Buttons is a lightweight WordPress plugin that adds customizable floati
 - Choose icons or upload your own images.
 - Save changes and you're done!
 
-### **📂 Plugin Folder Structure**
-flowchat-buttons/
-├── css/
-│   └── style.css
-├── images/
-├── js/
-│   └── main.js
-├── templates/
-├── flowchat-buttons.php
-├── README.md
-
 ### **📸 Screenshots**
 
 
